@@ -4,14 +4,233 @@
 @@include('components/page/_1_head.html',{ 'title': 'Заголовок', 'description': 'Описание', 'keywords': 'Ключевые слова', 'favicon': 'img/favicon/favicon.png' })
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="top">
         @@include('components/page/_2_header.html')
 
-        <div class="top-wrap">
-            <div class="container">
-
+        <section class="top-wrap">
+            <div class="top-slider">
+                <div class="top-slider__item">
+                    <picture>
+                        <source srcset="img/top-bg.jpg" media="(min-width: 641px)">
+                        <img src="img/top-bg.jpg" alt="slider">
+                    </picture>
+                    <div class="container">
+                        <div class="subtitle">17 мировых брендов в 37 салонах</div>
+                        <div class="title">Ринг — группа компаний автодилеров</div>
+                        <div class="desc">Более 20 лет честной работы</div>
+                        <a href="#" class="btn-orange">ПОДРОБНЕЕ</a>
+                    </div>
+                </div>
+                <div class="top-slider__item">
+                    <picture>
+                        <source srcset="img/top-bg.jpg" media="(min-width: 641px)">
+                        <img src="img/top-bg.jpg" alt="slider">
+                    </picture>
+                    <div class="container">
+                        <div class="subtitle">18 мировых брендов в 37 салонах</div>
+                        <div class="title">Ринг — группа компаний автодилеров</div>
+                        <div class="desc">Более 20 лет честной работы</div>
+                        <a href="#" class="btn-orange">ПОДРОБНЕЕ</a>
+                    </div>
+                </div>
+                <div class="top-slider__item">
+                    <picture>
+                        <source srcset="img/top-bg.jpg" media="(min-width: 641px)">
+                        <img src="img/top-bg.jpg" alt="slider">
+                    </picture>
+                    <div class="container">
+                        <div class="subtitle">19 мировых брендов в 37 салонах</div>
+                        <div class="title">Ринг — группа компаний автодилеров</div>
+                        <div class="desc">Более 20 лет честной работы</div>
+                        <a href="#" class="btn-orange">ПОДРОБНЕЕ</a>
+                    </div>
+                </div>
+                <div class="top-slider__item">
+                    <picture>
+                        <source srcset="img/top-bg.jpg" media="(min-width: 641px)">
+                        <img src="img/top-bg.jpg" alt="slider">
+                    </picture>
+                    <div class="container">
+                        <div class="subtitle">20 мировых брендов в 37 салонах</div>
+                        <div class="title">Ринг — группа компаний автодилеров</div>
+                        <div class="desc">Более 20 лет честной работы</div>
+                        <a href="#" class="btn-orange">ПОДРОБНЕЕ</a>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+
+        <section class="exs">
+            <div class="container">
+                <div class="exs-items">
+                    <div class="exs-item">
+                        <div class="exs-img"><img src="img/ex-ico1.svg" alt=""></div>
+                        <div class="exs-title">Авто с пробегом</div>
+                        <div class="exs-desc">Сделать выбор соответствующий вашим предпочтениям стало ещё проще</div>
+                    </div>
+                    <div class="exs-item">
+                        <div class="exs-img"><img src="img/ex-ico2.svg" alt=""></div>
+                        <div class="exs-title">Сервис</div>
+                        <div class="exs-desc">Сделать выбор соответствующий вашим предпочтениям стало ещё проще</div>
+                    </div>
+                    <div class="exs-item">
+                        <div class="exs-img"><img src="img/ex-ico3.svg" alt=""></div>
+                        <div class="exs-title">Кузовной ремонт</div>
+                        <div class="exs-desc">Сделать выбор соответствующий вашим предпочтениям стало ещё проще</div>
+                    </div>
+                    <div class="exs-item">
+                        <div class="exs-img"><img src="img/ex-ico4.svg" alt=""></div>
+                        <div class="exs-title">Корпоративные продажи</div>
+                        <div class="exs-desc">Сделать выбор соответствующий вашим предпочтениям стало ещё проще</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="auto">
+            <div class="container">
+                <div class="title">Новые автомобили</div>
+                <div class="auto-items">
+                    <a href="#" class="auto-item">
+                        <img src="img/genesis.png" alt="">
+                    </a>
+                    <a href="#" class="auto-item">
+                        <img src="img/renault.png" alt="">
+                    </a>
+                    <a href="#" class="auto-item">
+                        <img src="img/chevrolet.png" alt="">
+                    </a>
+                    <a href="#" class="auto-item">
+                        <img src="img/audi.png" alt="">
+                    </a>
+                    <a href="#" class="auto-item">
+                        <img src="img/volts.png" alt="">
+                    </a>
+                    <a href="#" class="auto-item">
+                        <img src="img/scoda.png" alt="">
+                    </a>
+                    <a href="#" class="auto-item">
+                        <img src="img/mazda.png" alt="">
+                    </a>
+                    <a href="#" class="auto-item">
+                        <img src="img/nissan.png" alt="">
+                    </a>
+                    <a href="#" class="auto-item">
+                        <img src="img/suzuki.png" alt="">
+                    </a>
+                    <a href="#" class="auto-item">
+                        <img src="img/datsun.png" alt="">
+                    </a>
+                    <a href="#" class="auto-item">
+                        <img src="img/hyundai.png" alt="">
+                    </a>
+                    <a href="#" class="auto-item">
+                        <img src="img/kia.png" alt="">
+                    </a>
+                    <a href="#" class="auto-item">
+                        <img src="img/ford.png" alt="">
+                    </a>
+                    <a href="#" class="auto-item">
+                        <img src="img/peugeot.png" alt="">
+                    </a>
+                    <a href="#" class="auto-item">
+                        <img src="img/citroen.png" alt="">
+                    </a>
+                    <a href="#" class="auto-item">
+                        <img src="img/haval.png" alt="">
+                    </a>
+                    <a href="#" class="auto-item">
+                        <img src="img/geely.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <div class="about-info">
+                    <div class="about-info__left">
+                        <div class="title">Группа компаний Ринг! Здесь ты – победитель!</div>
+                    </div>
+                    <div class="about-info__right">
+                        <p>На протяжении двух десятилетий главным приоритетом работы Группы компаний Ринг остается высочайший уровень обслуживания наших клиентов. Весь персонал в наших центрах регулярно проходит обучение и курсы повышения квалификации, чтобы
+                            каждый визит в любой из наших центров стал максимально комфортным и доставлял настоящее удовольствие каждому посетителю.</p>
+                    </div>
+                </div>
+                <div class="steps">
+                    <div class="step-item">
+                        <div class="step-num">01</div>
+                        <div class="step-title">Большой выбор автомобилей любого класса и уровня</div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-num">02</div>
+                        <div class="step-title">Выгодные программы лояльности для каждого клиента</div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-num">03</div>
+                        <div class="step-title">Широкое<br> предложение автомобилей с пробегом</div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-num">04</div>
+                        <div class="step-title">Кузовной цех, оснащенный самым современным оборудованием
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-num">05</div>
+                        <div class="step-title">Максимально выгодные предложения по кредитованию</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="actions">
+            <div class="container">
+                <div class="title">Акции</div>
+                <div class="actions-slider">
+                    <div class="actions-slider__item" style="background-image: url(img/action-1.jpg);">
+                        <div class="actions-title">Базовый вектор развития однозначно определяет каждого</div>
+                        <a href="#" class="btn-more"><i><svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L4 4L1 7" stroke="black"/>
+                            </svg>
+                            </i> Узнать больше</a>
+                    </div>
+                    <div class="actions-slider__item" style="background-image: url(img/action-2.jpg);">
+                        <div class="actions-title">Высококачественный прототип будущего проекта
+                        </div>
+                        <a href="#" class="btn-more"><i><svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L4 4L1 7" stroke="black"/>
+                            </svg>
+                            </i> Узнать больше</a>
+                    </div>
+                    <div class="actions-slider__item" style="background-image: url(img/action-3.jpg);">
+                        <div class="actions-title">Высококачественный прототип будущего проекта</div>
+                        <a href="#" class="btn-more"><i><svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L4 4L1 7" stroke="black"/>
+                            </svg>
+                            </i> Узнать больше</a>
+                    </div>
+                    <div class="actions-slider__item" style="background-image: url(img/action-1.jpg);">
+                        <div class="actions-title">Базовый вектор развития однозначно определяет каждого</div>
+                        <a href="#" class="btn-more"><i><svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L4 4L1 7" stroke="black"/>
+                            </svg>
+                            </i> Узнать больше</a>
+                    </div>
+                </div>
+                <a href="#" class="all-actions">все акции</a>
+            </div>
+        </section>
+
+        <section class="news">
+            <div class="container">
+                <div class="news-box">
+                    <div class="news-box__left">
+                        <div class="title">Новости</div>
+                    </div>
+                    <div class="news-box__right"></div>
+                </div>
+            </div>
+        </section>
 
         @@include('components/page/_3_footer.html')
     </div>

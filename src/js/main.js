@@ -1,25 +1,9 @@
-Number.isNaN = Number.isNaN || function(value) {
-    return typeof value === 'number' && isNaN(value);
-}
-
 $(function() {
 
-    $(window).scroll(function() {
-        if ($(window).width() > '991') {
-            if ($(this).scrollTop() > 90) {
-                $('.header').addClass('fixed');
-                $('body').css('padding-top', '90px');
-            } else if ($(this).scrollTop() < 90) {
-                $('.header').removeClass('fixed');
-                $('body').css('padding-top', '0');
-            }
-        }
-    });
-
-    jQuery("a.scrollto").click(function() {
-        elementClick = jQuery(this).attr("href")
-        destination = jQuery(elementClick).offset().top;
-        jQuery("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination }, 700);
+    $("a.anchor-up").click(function() {
+        elementClick = $(this).attr("href")
+        destination = $(elementClick).offset().top;
+        $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination }, 700);
         return false;
     });
 
@@ -45,6 +29,21 @@ $(function() {
         $(this).addClass('active');
         $('.styles-elems').find('.styles-elem-item').hide();
         $('#' + $(this).data('switch')).show();
+    });
+
+    $('.top-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true
+    });
+
+    $('.actions-slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        variableWidth: true,
+        dots: true
     });
 
 
