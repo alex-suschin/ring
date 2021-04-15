@@ -46,6 +46,15 @@ $(function() {
         dots: true
     });
 
+    $('.news-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        prevArrow: $('.prev-btn'),
+        nextArrow: $('.next-btn')
+    });
 
 });
 
