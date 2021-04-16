@@ -1637,7 +1637,29 @@ footer {
 }
 
 @media screen and (max-width: 991px) {
+    .sub-menu li:first-child {
+        margin-top: 0;
+        padding-top: 0;
+        border-top: none;
+    }
+    .sub-menu {
+        position: static;
+        min-width: initial;
+        max-height: initial;
+        display: none;
+        transition: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -ms-transition: none;
+        -o-transition: none;
+        margin-top: 24px;
+        border-bottom: 1px solid #EAEAEA;
+    }
+    .sub-menu li {
+        text-align: right;
+    }
     .menu .sub i {
+        @include tr;
         position: relative;
         display: inline-block;
         vertical-align: top;
@@ -1646,7 +1668,8 @@ footer {
         margin-right: -5px;
         margin-left: 5px;
     }
-    .menu .sub i svg {
+    .sub i svg {
+        @include tr;
         width: 8px;
         height: 5px;
         position: absolute;
@@ -1658,8 +1681,30 @@ footer {
         fill: transparent;
         stroke: #6B6B6B;
     }
-    .top-slider__item .title {
-        font-size: 26px;
+    .menu .sub.active>a {
+        color: #1F77FC;
+    }
+    .menu .sub.active i svg {
+        fill: transparent;
+        stroke: #1F77FC;
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+    }
+    header .menu li {
+        text-align: right;
+        width: 100%;
+    }
+    .mobile-menu .sub-menu li {
+        margin-bottom: 25px;
+        padding: 0;
+    }
+    .mobile-menu .sub-menu a {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 100%;
     }
     .tel {
         font-size: 0;
@@ -1989,6 +2034,24 @@ footer {
 }
 
 @media screen and (max-width: 640px) {
+    .footer-info {
+        padding-top: 24px;
+        padding-bottom: 37px;
+    }
+    .copyright {
+        border: none;
+        background: #fff;
+    }
+    .footer-links a {
+        margin-bottom: 14px;
+    }
+    footer .copyright-left .year,
+    footer .copyright-right .gen {
+        color: #000;
+    }
+    .footer-links {
+        column-gap: 0;
+    }
     .all-news {
         font-weight: normal;
         font-size: 14px;
