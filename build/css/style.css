@@ -8,17 +8,17 @@
 
 @font-face {
   font-family: "Gilroy";
-  src: url("../fonts/Gilroy-Medium.eot");
-  src: url("../fonts/Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff");
-  font-weight: 500;
+  src: url("../fonts/Gilroy-Light.eot");
+  src: url("../fonts/Gilroy-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Light.woff2") format("woff2"), url("../fonts/Gilroy-Light.woff") format("woff");
+  font-weight: 300;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "Gilroy";
-  src: url("../fonts/Gilroy-Light.eot");
-  src: url("../fonts/Gilroy-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Light.woff2") format("woff2"), url("../fonts/Gilroy-Light.woff") format("woff");
-  font-weight: 300;
+  src: url("../fonts/Gilroy-Medium.eot");
+  src: url("../fonts/Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
   font-display: swap; }
 
@@ -44,6 +44,7 @@ html {
 
 body {
   font-family: 'Gilroy', sans-serif;
+  padding-top: 98px;
   font-size: 20px;
   line-height: 1;
   font-weight: 400;
@@ -246,6 +247,13 @@ select {
     background: rgba(0, 0, 0, 0.38); }
 
 .header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 999;
   padding: 28px 0 28px 0; }
   .header .container {
     display: -webkit-box;
@@ -1703,6 +1711,8 @@ footer {
     width: 47%; } }
 
 @media screen and (max-width: 991px) {
+  body {
+    padding-top: 82px; }
   .sub-menu li:first-child {
     margin-top: 0;
     padding-top: 0;
@@ -2075,6 +2085,15 @@ footer {
     right: -37px; } }
 
 @media screen and (max-width: 640px) {
+  [data-aos] {
+    pointer-events: initial; }
+  html:not(.no-js) [data-aos^='fade'][data-aos^='fade'] {
+    opacity: 1;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none; }
   .footer-info {
     padding-top: 24px;
     padding-bottom: 37px; }

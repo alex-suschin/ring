@@ -1,5 +1,11 @@
 $(function() {
 
+    AOS.init({
+        easing: 'cubic-bezier(0.75, 0.02, 0.5, 1);',
+        once: true,
+        disable: 'mobile'
+    });
+
     $("a.anchor-up").click(function() {
         elementClick = $(this).attr("href")
         destination = $(elementClick).offset().top;
@@ -41,7 +47,7 @@ $(function() {
     });
 
     $('.top-slider').slick({
-        infinite: true,
+        infinite: false,
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
@@ -137,6 +143,8 @@ $(window).on('load resize', function() {
     }
 
     if (width > '640') {
+
+
         $('.actions-slider:not(.slick-initialized)').slick({
             infinite: true,
             slidesToShow: 3,
