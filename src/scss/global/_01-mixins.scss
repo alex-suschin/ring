@@ -28,6 +28,14 @@
     -o-transition: all 0.3s ease-in-out;
 }
 
+@mixin traslateY {
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
 @mixin abs100 {
     position: absolute;
     top: 0;
