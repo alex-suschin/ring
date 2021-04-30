@@ -12,6 +12,22 @@
     -o-transition: all .2s cubic-bezier(0.75, 0.02, 0.5, 1);
 }
 
+@mixin tr2 {
+    transition: all 0.7s ease-in-out;
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+}
+
+@mixin tr3 {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
 @mixin abs100 {
     position: absolute;
     top: 0;

@@ -24,20 +24,20 @@ $(function() {
         }
     });
 
-    $('#hamburger-icon-footer').click(function() {
-        var footHeight = $(".footer-top");
-        $("html, body").animate({
-            scrollTop: footHeight.outerHeight() + footHeight.offset().top - 81
-        }, "slow");
-        $(this).toggleClass('active');
-        if ($(this).hasClass('active')) {
-            $('.mobile-menu-footer').addClass('active');
-            $('html').addClass('ov-hidden');
-        } else {
-            $('.mobile-menu-footer').removeClass('active');
-            $('html').removeClass('ov-hidden');
-        }
-    });
+    // $('#hamburger-icon-footer').click(function() {
+    //     var footHeight = $(".footer-top");
+    //     $("html, body").animate({
+    //         scrollTop: footHeight.outerHeight() + footHeight.offset().top - 81
+    //     }, "slow");
+    //     $(this).toggleClass('active');
+    //     if ($(this).hasClass('active')) {
+    //         $('.mobile-menu-footer').addClass('active');
+    //         $('html').addClass('ov-hidden');
+    //     } else {
+    //         $('.mobile-menu-footer').removeClass('active');
+    //         $('html').removeClass('ov-hidden');
+    //     }
+    // });
 
     $('.style-tab').click(function() {
         $('.style-tabs').find('.active').removeClass('active');
@@ -142,20 +142,20 @@ $(window).on('load resize', function() {
         $('.footer-left .menu').prependTo($('.mobile-menu-footer'));
     }
 
-    if (width > '640') {
+    // if (width > '640') {
 
 
-        $('.actions-slider:not(.slick-initialized)').slick({
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            variableWidth: true,
-            dots: true,
-            arrows: false
-        });
-    } else {
-        $(".actions-slider.slick-initialized").slick("unslick");
-    }
+    //     $('.actions-slider:not(.slick-initialized)').slick({
+    //         infinite: true,
+    //         slidesToShow: 3,
+    //         slidesToScroll: 1,
+    //         variableWidth: true,
+    //         dots: true,
+    //         arrows: false
+    //     });
+    // } else {
+    //     $(".actions-slider.slick-initialized").slick("unslick");
+    // }
 
 });
 //# sourceMappingURL=../sourcemaps/main.js.map
