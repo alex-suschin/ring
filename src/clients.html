@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('components/page/_1_head.html',{ 'title': 'Заголовок', 'description': 'Описание', 'keywords': 'Ключевые слова', 'favicon': 'img/favicon/favicon.png' })
+
+<body>
+    <div class="wrapper" id="top">
+        @@include('components/page/_2_header.html')
+
+        <section class="content">
+            <div class="container">
+                <ul class="breadcrumbs">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Корпоративным клиентам</a></li>
+                </ul>
+
+                <h1>Корпоративным клиентам</h1>
+
+                <p>Одним из ключевых направлений деятельности группы компаний РИНГ является развитие отношений с корпоративными клиентами. Мы строим наши отношения с клиентами на основе взаимовыгодного сотрудничества и прилагаем все усилия для того, чтобы
+                    сделать бизнес наших клиентов более успешным. Мы стремимся квалифицированно оценить те требования, которые предъявляются каждой компанией к своему служебному автотранспорту, и стараемся предложить оптимальные решения.</p>
+
+                <div class="note-img" style="background-image: url(img/note-bg-1.jpg);">
+                    <div class="container">
+                        ГК РИНГ специализируется на оказании полного цикла услуг для корпоративных клиентов: от помощи в выборе нового автомобиля с максимальной выгодой для Вашего бизнеса и разработки программ технического обслуживания до обмена автомобилей на новые и их выкупа.
+                    </div>
+                </div>
+
+                <p>ГК РИНГ имеет многолетний опыт поставок легковых и коммерческих автомобилей государственным и муниципальным предприятиям, а также организациям, работающим по 44-ФЗ или 223-ФЗ. Наша компания принимает активное участие во всех видах конкурентных
+                    закупок: аукционах, конкурсах, запросах предложений, запросах ценовых котировок и прочие на территории Российской Федерации.<br>
+                    <strong>В форме заявки выберете необходимую услугу и отправьте нам запрос на сотрудничество</strong></p>
+
+                <form action="/" method="post" class="form-clients">
+                    <div class="form-clients-box">
+                        <div class="form-clients-item">
+                            <label for="">Имя</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="form-clients-item">
+                            <label for="">Телефона</label>
+                            <input type="tel" required placeholder="+7">
+                        </div>
+                        <div class="form-clients-item">
+                            <label for="">Марка</label>
+                            <select name="mark-auto" id="mark-auto">
+                                <option value="Укажите марку автомобиля" selected disabled>Укажите марку автомобиля</option>
+                                <option value="Genesis">Genesis</option>
+                                <option value="Chevrolet">Chevrolet</option>
+                                <option value="Audi">Audi</option>
+                                <option value="Renault">Renault</option>
+                                <option value="Volkswagen">Volkswagen</option>
+                                <option value="Skoda">Skoda</option>
+                                <option value="Mazda">Mazda</option>
+                                <option value="Nissan">Nissan</option>
+                                <option value="Suzuki">Suzuki</option>
+                                <option value="Datsun">Datsun</option>
+                                <option value="Hyundai">Hyundai</option>
+                                <option value="KIA">KIA</option>
+                                <option value="Ford">Ford</option>
+                                <option value="Peugeot">Peugeot</option>
+                                <option value="Sitroen">Sitroen</option>
+                                <option value="Haval">Haval</option>
+                                <option value="Geely">Geely</option>
+                            </select>
+                        </div>
+                        <div class="form-clients-item">
+                            <label for="">Город</label>
+                            <select name="mark-auto" id="mark-auto">
+                                <option value="Все города" selected disabled>Все города</option>
+                                <option value="Воронеж">Воронеж</option>
+                                <option value="Липецк">Липецк</option>
+                                <option value="Белгород">Белгород</option>
+                                <option value="Старый Оскол">Старый Оскол</option>
+                            </select>
+                        </div>
+                        <div class="form-clients-item">
+                            <label for="">Услуга</label>
+                            <select name="mark-auto" id="mark-auto">
+                                <option value="Услуга" selected disabled>Услуга</option>
+                                <option value="Автомобиля в лизинг">Автомобиля в лизинг</option>
+                                <option value="Кредит">Кредит</option>
+                                <option value="Тест драйв">Тест драйв</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="agree">
+                        <label for="checkbox2">
+                            <input id="checkbox2" required type="checkbox">
+                            <i></i>
+                            <span>Нажав кнопку «Отправить», я даю согласие на обработку моих персональных данных</span>
+                        </label>
+                    </div>
+
+                    <button class="btn-orange" type="submit">Отправить</button>
+
+                </form>
+
+            </div>
+        </section>
+
+        @@include('components/page/_3_footer.html')
+    </div>
+
+    @@include('components/page/_4_scripts.html')
+</body>
+
+</html>
