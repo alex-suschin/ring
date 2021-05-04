@@ -79,6 +79,8 @@ $(function() {
         }]
     });
 
+    $('select').niceSelect();
+
 });
 
 

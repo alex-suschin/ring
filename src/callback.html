@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('components/page/_1_head.html',{ 'title': 'Заголовок', 'description': 'Описание', 'keywords': 'Ключевые слова', 'favicon': 'img/favicon/favicon.png' })
+
+<body>
+    <div class="wrapper" id="top">
+        @@include('components/page/_2_header.html')
+
+        <section class="content">
+            <div class="container">
+                <ul class="breadcrumbs">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Обратная связь</a></li>
+                </ul>
+
+                <h1>Обратная связь</h1>
+
+                <form action="/" method="post" class="form-callback">
+                    <div class="title">Пишите нам по любым вопросам, мы с радостью на них ответим</div>
+                    <div class="form-callback-box">
+                        <div class="form-callback-item">
+                            <label for="">Имя</label>
+                            <input type="text">
+                        </div>
+                        <div class="form-callback-item">
+                            <label for="">Телефона</label>
+                            <input type="tel" placeholder="+7">
+                        </div>
+                        <div class="form-callback-item">
+                            <label for="">Электронная почта</label>
+                            <input type="e-mail">
+                        </div>
+                        <div class="form-callback-item">
+                            <label for="">Текст сообщения</label>
+                            <textarea name="message" id="message"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="agree">
+                        <label for="checkbox">
+                            <input id="checkbox" type="checkbox">
+                            <i></i>
+                            <span>Нажав кнопку «Отправить», я даю согласие на обработку моих персональных данных</span>
+                        </label>
+                    </div>
+
+                    <button class="btn-orange" type="submit">Отправить</button>
+
+                </form>
+
+            </div>
+        </section>
+
+        @@include('components/page/_3_footer.html')
+    </div>
+
+    @@include('components/page/_4_scripts.html')
+</body>
+
+</html>

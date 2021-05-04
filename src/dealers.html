@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('components/page/_1_head.html',{ 'title': 'Заголовок', 'description': 'Описание', 'keywords': 'Ключевые слова', 'favicon': 'img/favicon/favicon.png' })
+
+<body>
+    <div class="wrapper" id="top">
+        @@include('components/page/_2_header.html')
+
+        <section class="content">
+            <div class="container">
+                <ul class="breadcrumbs">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Дилерские центры</a></li>
+                </ul>
+
+                <h1>Дилерские центры</h1>
+
+                <div class="filter">
+                    <div class="filter-item">
+                        <label for="">Марка</label>
+                        <select name="mark-auto" id="mark-auto">
+                            <option value="Укажите марку автомобиля" selected disabled>Укажите марку автомобиля</option>
+                            <option value="Genesis">Genesis</option>
+                            <option value="Chevrolet">Chevrolet</option>
+                            <option value="Audi">Audi</option>
+                            <option value="Renault">Renault</option>
+                            <option value="Volkswagen">Volkswagen</option>
+                            <option value="Skoda">Skoda</option>
+                            <option value="Mazda">Mazda</option>
+                            <option value="Nissan">Nissan</option>
+                            <option value="Suzuki">Suzuki</option>
+                            <option value="Datsun">Datsun</option>
+                            <option value="Hyundai">Hyundai</option>
+                            <option value="KIA">KIA</option>
+                            <option value="Ford">Ford</option>
+                            <option value="Peugeot">Peugeot</option>
+                            <option value="Sitroen">Sitroen</option>
+                            <option value="Haval">Haval</option>
+                            <option value="Geely">Geely</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-item">
+                        <label for="">Город</label>
+                        <select name="mark-auto" id="mark-auto">
+                            <option value="Все города" selected disabled>Все города</option>
+                            <option value="Воронеж">Воронеж</option>
+                            <option value="Липецк">Липецк</option>
+                            <option value="Белгород">Белгород</option>
+                            <option value="Старый Оскол">Старый Оскол</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="dealers-items">
+                    <div class="dealers-item">
+                        <div class="auto-item"><img src="img/genesis.png" alt=""></div>
+                        <div class="dealer-name">
+                            <b>Ринг Авто</b>
+                            <span>Официальный дилер Genesis</span>
+                            <a href="#" class="btn">подробнее</a>
+                        </div>
+                        <div class="dealer-info">
+                            <div class="dealer-info-item"><i><img src="img/gps.svg" alt=""></i> г. Воронеж, ул. Изыскателей, 39, корп. 2</div>
+                            <div class="dealer-info-item"><i><img src="img/phone.svg" alt=""></i><a href="tel:+74732205639">+7 (473) 220-56-39</a></div>
+                            <div class="dealer-info-item"><i><img src="img/clock.svg" alt=""></i>Вс.-Чт.: 08:00-20:00, Пт.: сокращенный день, Сб: выходной</div>
+                            <div class="dealer-info-item"><i><img src="img/email.svg" alt=""></i><a href="mailto:zajavki@hyundai-ringauto.ru">zajavki@hyundai-ringauto.ru</a></div>
+                            <div class="dealer-info-item"><i><img src="img/site.svg" alt=""></i><a href="">www.genesis-ringauto.ru</a></div>
+                            <div class="dealer-info-item"><i><img src="img/navigation.svg" alt=""></i><a href="#">показать на карте</a></div>
+                        </div>
+                    </div>
+
+                    <div class="dealers-item">
+                        <div class="auto-item"><img src="img/chevrolet.png" alt=""></div>
+                        <div class="dealer-name">
+                            <b>Ринг Авто Оскол Chevrolet</b>
+                            <span>Официальный дилер Chevrolet</span>
+                            <a href="#" class="btn">подробнее</a>
+                        </div>
+                        <div class="dealer-info">
+                            <div class="dealer-info-item"><i><img src="img/gps.svg" alt=""></i> г. Воронеж, ул. Изыскателей, 39, корп. 2</div>
+                            <div class="dealer-info-item"><i><img src="img/phone.svg" alt=""></i><a href="tel:+74732205639">+7 (473) 220-56-39</a></div>
+                            <div class="dealer-info-item"><i><img src="img/clock.svg" alt=""></i>Вс.-Чт.: 08:00-20:00, Пт.: сокращенный день, Сб: выходной</div>
+                            <div class="dealer-info-item"><i><img src="img/email.svg" alt=""></i><a href="mailto:zajavki@hyundai-ringauto.ru">zajavki@hyundai-ringauto.ru</a></div>
+                            <div class="dealer-info-item"><i><img src="img/site.svg" alt=""></i><a href="">www.genesis-ringauto.ru</a></div>
+                            <div class="dealer-info-item"><i><img src="img/navigation.svg" alt=""></i><a href="#">показать на карте</a></div>
+                        </div>
+                    </div>
+
+                    <div class="dealers-item">
+                        <div class="auto-item"><img src="img/audi.png" alt=""></div>
+                        <div class="dealer-name">
+                            <b>Ауди Центр Воронеж</b>
+                            <span>Официальный дилер Audi</span>
+                            <a href="#" class="btn">подробнее</a>
+                        </div>
+                        <div class="dealer-info">
+                            <div class="dealer-info-item"><i><img src="img/gps.svg" alt=""></i> г. Воронеж, ул. Изыскателей, 39, корп. 2</div>
+                            <div class="dealer-info-item"><i><img src="img/phone.svg" alt=""></i><a href="tel:+74732205639">+7 (473) 220-56-39</a></div>
+                            <div class="dealer-info-item"><i><img src="img/clock.svg" alt=""></i>Вс.-Чт.: 08:00-20:00, Пт.: сокращенный день, Сб: выходной</div>
+                            <div class="dealer-info-item"><i><img src="img/email.svg" alt=""></i><a href="mailto:zajavki@hyundai-ringauto.ru">zajavki@hyundai-ringauto.ru</a></div>
+                            <div class="dealer-info-item"><i><img src="img/site.svg" alt=""></i><a href="">www.genesis-ringauto.ru</a></div>
+                            <div class="dealer-info-item"><i><img src="img/navigation.svg" alt=""></i><a href="#">показать на карте</a></div>
+                        </div>
+                    </div>
+
+                    <div class="dealers-item">
+                        <div class="auto-item"><img src="img/renault.png" alt=""></div>
+                        <div class="dealer-name">
+                            <b>Ринг Авто</b>
+                            <span>Официальный дилер Genesis</span>
+                            <a href="#" class="btn">подробнее</a>
+                        </div>
+                        <div class="dealer-info">
+                            <div class="dealer-info-item"><i><img src="img/gps.svg" alt=""></i> г. Воронеж, ул. Изыскателей, 39, корп. 2</div>
+                            <div class="dealer-info-item"><i><img src="img/phone.svg" alt=""></i><a href="tel:+74732205639">+7 (473) 220-56-39</a></div>
+                            <div class="dealer-info-item"><i><img src="img/clock.svg" alt=""></i>Вс.-Чт.: 08:00-20:00, Пт.: сокращенный день, Сб: выходной</div>
+                            <div class="dealer-info-item"><i><img src="img/email.svg" alt=""></i><a href="mailto:zajavki@hyundai-ringauto.ru">zajavki@hyundai-ringauto.ru</a></div>
+                            <div class="dealer-info-item"><i><img src="img/site.svg" alt=""></i><a href="">www.genesis-ringauto.ru</a></div>
+                            <div class="dealer-info-item"><i><img src="img/navigation.svg" alt=""></i><a href="#">показать на карте</a></div>
+                        </div>
+                    </div>
+
+                    <div class="dealers-item">
+                        <div class="auto-item"><img src="img/volts.png" alt=""></div>
+                        <div class="dealer-name">
+                            <b>Ринг Авто Оскол Chevrolet</b>
+                            <span>Официальный дилер Chevrolet</span>
+                            <a href="#" class="btn">подробнее</a>
+                        </div>
+                        <div class="dealer-info">
+                            <div class="dealer-info-item"><i><img src="img/gps.svg" alt=""></i> г. Воронеж, ул. Изыскателей, 39, корп. 2</div>
+                            <div class="dealer-info-item"><i><img src="img/phone.svg" alt=""></i><a href="tel:+74732205639">+7 (473) 220-56-39</a></div>
+                            <div class="dealer-info-item"><i><img src="img/clock.svg" alt=""></i>Вс.-Чт.: 08:00-20:00, Пт.: сокращенный день, Сб: выходной</div>
+                            <div class="dealer-info-item"><i><img src="img/email.svg" alt=""></i><a href="mailto:zajavki@hyundai-ringauto.ru">zajavki@hyundai-ringauto.ru</a></div>
+                            <div class="dealer-info-item"><i><img src="img/site.svg" alt=""></i><a href="">www.genesis-ringauto.ru</a></div>
+                            <div class="dealer-info-item"><i><img src="img/navigation.svg" alt=""></i><a href="#">показать на карте</a></div>
+                        </div>
+                    </div>
+
+                    <div class="dealers-item">
+                        <div class="auto-item"><img src="img/scoda.png" alt=""></div>
+                        <div class="dealer-name">
+                            <b>Ринг Авто</b>
+                            <span>Официальный дилер Genesis</span>
+                            <a href="#" class="btn">подробнее</a>
+                        </div>
+                        <div class="dealer-info">
+                            <div class="dealer-info-item"><i><img src="img/gps.svg" alt=""></i> г. Воронеж, ул. Изыскателей, 39, корп. 2</div>
+                            <div class="dealer-info-item"><i><img src="img/phone.svg" alt=""></i><a href="tel:+74732205639">+7 (473) 220-56-39</a></div>
+                            <div class="dealer-info-item"><i><img src="img/clock.svg" alt=""></i>Вс.-Чт.: 08:00-20:00, Пт.: сокращенный день, Сб: выходной</div>
+                            <div class="dealer-info-item"><i><img src="img/email.svg" alt=""></i><a href="mailto:zajavki@hyundai-ringauto.ru">zajavki@hyundai-ringauto.ru</a></div>
+                            <div class="dealer-info-item"><i><img src="img/site.svg" alt=""></i><a href="">www.genesis-ringauto.ru</a></div>
+                            <div class="dealer-info-item"><i><img src="img/navigation.svg" alt=""></i><a href="#">показать на карте</a></div>
+                        </div>
+                    </div>
+
+                    <div class="dealers-item">
+                        <div class="auto-item"><img src="img/mazda.png" alt=""></div>
+                        <div class="dealer-name">
+                            <b>Ринг Авто</b>
+                            <span>Официальный дилер Genesis</span>
+                            <a href="#" class="btn">подробнее</a>
+                        </div>
+                        <div class="dealer-info">
+                            <div class="dealer-info-item"><i><img src="img/gps.svg" alt=""></i> г. Воронеж, ул. Изыскателей, 39, корп. 2</div>
+                            <div class="dealer-info-item"><i><img src="img/phone.svg" alt=""></i><a href="tel:+74732205639">+7 (473) 220-56-39</a></div>
+                            <div class="dealer-info-item"><i><img src="img/clock.svg" alt=""></i>Вс.-Чт.: 08:00-20:00, Пт.: сокращенный день, Сб: выходной</div>
+                            <div class="dealer-info-item"><i><img src="img/email.svg" alt=""></i><a href="mailto:zajavki@hyundai-ringauto.ru">zajavki@hyundai-ringauto.ru</a></div>
+                            <div class="dealer-info-item"><i><img src="img/site.svg" alt=""></i><a href="">www.genesis-ringauto.ru</a></div>
+                            <div class="dealer-info-item"><i><img src="img/navigation.svg" alt=""></i><a href="#">показать на карте</a></div>
+                        </div>
+                    </div>
+
+                    <div class="dealers-item">
+                        <div class="auto-item"><img src="img/nissan.png" alt=""></div>
+                        <div class="dealer-name">
+                            <b>Ринг Авто Оскол Chevrolet</b>
+                            <span>Официальный дилер Chevrolet</span>
+                            <a href="#" class="btn">подробнее</a>
+                        </div>
+                        <div class="dealer-info">
+                            <div class="dealer-info-item"><i><img src="img/gps.svg" alt=""></i> г. Воронеж, ул. Изыскателей, 39, корп. 2</div>
+                            <div class="dealer-info-item"><i><img src="img/phone.svg" alt=""></i><a href="tel:+74732205639">+7 (473) 220-56-39</a></div>
+                            <div class="dealer-info-item"><i><img src="img/clock.svg" alt=""></i>Вс.-Чт.: 08:00-20:00, Пт.: сокращенный день, Сб: выходной</div>
+                            <div class="dealer-info-item"><i><img src="img/email.svg" alt=""></i><a href="mailto:zajavki@hyundai-ringauto.ru">zajavki@hyundai-ringauto.ru</a></div>
+                            <div class="dealer-info-item"><i><img src="img/site.svg" alt=""></i><a href="">www.genesis-ringauto.ru</a></div>
+                            <div class="dealer-info-item"><i><img src="img/navigation.svg" alt=""></i><a href="#">показать на карте</a></div>
+                        </div>
+                    </div>
+
+                    <div class="dealers-item">
+                        <div class="auto-item"><img src="img/suzuki.png" alt=""></div>
+                        <div class="dealer-name">
+                            <b>Ринг Авто</b>
+                            <span>Официальный дилер Genesis</span>
+                            <a href="#" class="btn">подробнее</a>
+                        </div>
+                        <div class="dealer-info">
+                            <div class="dealer-info-item"><i><img src="img/gps.svg" alt=""></i> г. Воронеж, ул. Изыскателей, 39, корп. 2</div>
+                            <div class="dealer-info-item"><i><img src="img/phone.svg" alt=""></i><a href="tel:+74732205639">+7 (473) 220-56-39</a></div>
+                            <div class="dealer-info-item"><i><img src="img/clock.svg" alt=""></i>Вс.-Чт.: 08:00-20:00, Пт.: сокращенный день, Сб: выходной</div>
+                            <div class="dealer-info-item"><i><img src="img/email.svg" alt=""></i><a href="mailto:zajavki@hyundai-ringauto.ru">zajavki@hyundai-ringauto.ru</a></div>
+                            <div class="dealer-info-item"><i><img src="img/site.svg" alt=""></i><a href="">www.genesis-ringauto.ru</a></div>
+                            <div class="dealer-info-item"><i><img src="img/navigation.svg" alt=""></i><a href="#">показать на карте</a></div>
+                        </div>
+                    </div>
+
+                    <div class="dealers-item">
+                        <div class="auto-item"><img src="img/datsun.png" alt=""></div>
+                        <div class="dealer-name">
+                            <b>Ринг Авто</b>
+                            <span>Официальный дилер Genesis</span>
+                            <a href="#" class="btn">подробнее</a>
+                        </div>
+                        <div class="dealer-info">
+                            <div class="dealer-info-item"><i><img src="img/gps.svg" alt=""></i> г. Воронеж, ул. Изыскателей, 39, корп. 2</div>
+                            <div class="dealer-info-item"><i><img src="img/phone.svg" alt=""></i><a href="tel:+74732205639">+7 (473) 220-56-39</a></div>
+                            <div class="dealer-info-item"><i><img src="img/clock.svg" alt=""></i>Вс.-Чт.: 08:00-20:00, Пт.: сокращенный день, Сб: выходной</div>
+                            <div class="dealer-info-item"><i><img src="img/email.svg" alt=""></i><a href="mailto:zajavki@hyundai-ringauto.ru">zajavki@hyundai-ringauto.ru</a></div>
+                            <div class="dealer-info-item"><i><img src="img/site.svg" alt=""></i><a href="">www.genesis-ringauto.ru</a></div>
+                            <div class="dealer-info-item"><i><img src="img/navigation.svg" alt=""></i><a href="#">показать на карте</a></div>
+                        </div>
+                    </div>
+
+                    <div class="dealers-item">
+                        <div class="auto-item"><img src="img/hyundai.png" alt=""></div>
+                        <div class="dealer-name">
+                            <b>Ринг Авто Оскол Chevrolet</b>
+                            <span>Официальный дилер Chevrolet</span>
+                            <a href="#" class="btn">подробнее</a>
+                        </div>
+                        <div class="dealer-info">
+                            <div class="dealer-info-item"><i><img src="img/gps.svg" alt=""></i> г. Воронеж, ул. Изыскателей, 39, корп. 2</div>
+                            <div class="dealer-info-item"><i><img src="img/phone.svg" alt=""></i><a href="tel:+74732205639">+7 (473) 220-56-39</a></div>
+                            <div class="dealer-info-item"><i><img src="img/clock.svg" alt=""></i>Вс.-Чт.: 08:00-20:00, Пт.: сокращенный день, Сб: выходной</div>
+                            <div class="dealer-info-item"><i><img src="img/email.svg" alt=""></i><a href="mailto:zajavki@hyundai-ringauto.ru">zajavki@hyundai-ringauto.ru</a></div>
+                            <div class="dealer-info-item"><i><img src="img/site.svg" alt=""></i><a href="">www.genesis-ringauto.ru</a></div>
+                            <div class="dealer-info-item"><i><img src="img/navigation.svg" alt=""></i><a href="#">показать на карте</a></div>
+                        </div>
+                    </div>
+
+                    <div class="dealers-item">
+                        <div class="auto-item"><img src="img/kia.png" alt=""></div>
+                        <div class="dealer-name">
+                            <b>Ринг Авто</b>
+                            <span>Официальный дилер Genesis</span>
+                            <a href="#" class="btn">подробнее</a>
+                        </div>
+                        <div class="dealer-info">
+                            <div class="dealer-info-item"><i><img src="img/gps.svg" alt=""></i> г. Воронеж, ул. Изыскателей, 39, корп. 2</div>
+                            <div class="dealer-info-item"><i><img src="img/phone.svg" alt=""></i><a href="tel:+74732205639">+7 (473) 220-56-39</a></div>
+                            <div class="dealer-info-item"><i><img src="img/clock.svg" alt=""></i>Вс.-Чт.: 08:00-20:00, Пт.: сокращенный день, Сб: выходной</div>
+                            <div class="dealer-info-item"><i><img src="img/email.svg" alt=""></i><a href="mailto:zajavki@hyundai-ringauto.ru">zajavki@hyundai-ringauto.ru</a></div>
+                            <div class="dealer-info-item"><i><img src="img/site.svg" alt=""></i><a href="">www.genesis-ringauto.ru</a></div>
+                            <div class="dealer-info-item"><i><img src="img/navigation.svg" alt=""></i><a href="#">показать на карте</a></div>
+                        </div>
+                    </div>
+
+                    <div class="dealers-item">
+                        <div class="auto-item"><img src="img/ford.png" alt=""></div>
+                        <div class="dealer-name">
+                            <b>Ринг Авто</b>
+                            <span>Официальный дилер Genesis</span>
+                            <a href="#" class="btn">подробнее</a>
+                        </div>
+                        <div class="dealer-info">
+                            <div class="dealer-info-item"><i><img src="img/gps.svg" alt=""></i> г. Воронеж, ул. Изыскателей, 39, корп. 2</div>
+                            <div class="dealer-info-item"><i><img src="img/phone.svg" alt=""></i><a href="tel:+74732205639">+7 (473) 220-56-39</a></div>
+                            <div class="dealer-info-item"><i><img src="img/clock.svg" alt=""></i>Вс.-Чт.: 08:00-20:00, Пт.: сокращенный день, Сб: выходной</div>
+                            <div class="dealer-info-item"><i><img src="img/email.svg" alt=""></i><a href="mailto:zajavki@hyundai-ringauto.ru">zajavki@hyundai-ringauto.ru</a></div>
+                            <div class="dealer-info-item"><i><img src="img/site.svg" alt=""></i><a href="">www.genesis-ringauto.ru</a></div>
+                            <div class="dealer-info-item"><i><img src="img/navigation.svg" alt=""></i><a href="#">показать на карте</a></div>
+                        </div>
+                    </div>
+
+                    <div class="dealers-item">
+                        <div class="auto-item"><img src="img/peugeot.png" alt=""></div>
+                        <div class="dealer-name">
+                            <b>Ринг Авто Оскол Chevrolet</b>
+                            <span>Официальный дилер Chevrolet</span>
+                            <a href="#" class="btn">подробнее</a>
+                        </div>
+                        <div class="dealer-info">
+                            <div class="dealer-info-item"><i><img src="img/gps.svg" alt=""></i> г. Воронеж, ул. Изыскателей, 39, корп. 2</div>
+                            <div class="dealer-info-item"><i><img src="img/phone.svg" alt=""></i><a href="tel:+74732205639">+7 (473) 220-56-39</a></div>
+                            <div class="dealer-info-item"><i><img src="img/clock.svg" alt=""></i>Вс.-Чт.: 08:00-20:00, Пт.: сокращенный день, Сб: выходной</div>
+                            <div class="dealer-info-item"><i><img src="img/email.svg" alt=""></i><a href="mailto:zajavki@hyundai-ringauto.ru">zajavki@hyundai-ringauto.ru</a></div>
+                            <div class="dealer-info-item"><i><img src="img/site.svg" alt=""></i><a href="">www.genesis-ringauto.ru</a></div>
+                            <div class="dealer-info-item"><i><img src="img/navigation.svg" alt=""></i><a href="#">показать на карте</a></div>
+                        </div>
+                    </div>
+
+                    <div class="dealers-item">
+                        <div class="auto-item"><img src="img/citroen.png" alt=""></div>
+                        <div class="dealer-name">
+                            <b>Ринг Авто</b>
+                            <span>Официальный дилер Genesis</span>
+                            <a href="#" class="btn">подробнее</a>
+                        </div>
+                        <div class="dealer-info">
+                            <div class="dealer-info-item"><i><img src="img/gps.svg" alt=""></i> г. Воронеж, ул. Изыскателей, 39, корп. 2</div>
+                            <div class="dealer-info-item"><i><img src="img/phone.svg" alt=""></i><a href="tel:+74732205639">+7 (473) 220-56-39</a></div>
+                            <div class="dealer-info-item"><i><img src="img/clock.svg" alt=""></i>Вс.-Чт.: 08:00-20:00, Пт.: сокращенный день, Сб: выходной</div>
+                            <div class="dealer-info-item"><i><img src="img/email.svg" alt=""></i><a href="mailto:zajavki@hyundai-ringauto.ru">zajavki@hyundai-ringauto.ru</a></div>
+                            <div class="dealer-info-item"><i><img src="img/site.svg" alt=""></i><a href="">www.genesis-ringauto.ru</a></div>
+                            <div class="dealer-info-item"><i><img src="img/navigation.svg" alt=""></i><a href="#">показать на карте</a></div>
+                        </div>
+                    </div>
+
+                    <div class="dealers-item">
+                        <div class="auto-item"><img src="img/haval.png" alt=""></div>
+                        <div class="dealer-name">
+                            <b>Ринг Авто</b>
+                            <span>Официальный дилер Genesis</span>
+                            <a href="#" class="btn">подробнее</a>
+                        </div>
+                        <div class="dealer-info">
+                            <div class="dealer-info-item"><i><img src="img/gps.svg" alt=""></i> г. Воронеж, ул. Изыскателей, 39, корп. 2</div>
+                            <div class="dealer-info-item"><i><img src="img/phone.svg" alt=""></i><a href="tel:+74732205639">+7 (473) 220-56-39</a></div>
+                            <div class="dealer-info-item"><i><img src="img/clock.svg" alt=""></i>Вс.-Чт.: 08:00-20:00, Пт.: сокращенный день, Сб: выходной</div>
+                            <div class="dealer-info-item"><i><img src="img/email.svg" alt=""></i><a href="mailto:zajavki@hyundai-ringauto.ru">zajavki@hyundai-ringauto.ru</a></div>
+                            <div class="dealer-info-item"><i><img src="img/site.svg" alt=""></i><a href="">www.genesis-ringauto.ru</a></div>
+                            <div class="dealer-info-item"><i><img src="img/navigation.svg" alt=""></i><a href="#">показать на карте</a></div>
+                        </div>
+                    </div>
+
+                    <div class="dealers-item">
+                        <div class="auto-item"><img src="img/geely.png" alt=""></div>
+                        <div class="dealer-name">
+                            <b>Ринг Авто Оскол Chevrolet</b>
+                            <span>Официальный дилер Chevrolet</span>
+                            <a href="#" class="btn">подробнее</a>
+                        </div>
+                        <div class="dealer-info">
+                            <div class="dealer-info-item"><i><img src="img/gps.svg" alt=""></i> г. Воронеж, ул. Изыскателей, 39, корп. 2</div>
+                            <div class="dealer-info-item"><i><img src="img/phone.svg" alt=""></i><a href="tel:+74732205639">+7 (473) 220-56-39</a></div>
+                            <div class="dealer-info-item"><i><img src="img/clock.svg" alt=""></i>Вс.-Чт.: 08:00-20:00, Пт.: сокращенный день, Сб: выходной</div>
+                            <div class="dealer-info-item"><i><img src="img/email.svg" alt=""></i><a href="mailto:zajavki@hyundai-ringauto.ru">zajavki@hyundai-ringauto.ru</a></div>
+                            <div class="dealer-info-item"><i><img src="img/site.svg" alt=""></i><a href="">www.genesis-ringauto.ru</a></div>
+                            <div class="dealer-info-item"><i><img src="img/navigation.svg" alt=""></i><a href="#">показать на карте</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        @@include('components/page/_3_footer.html')
+    </div>
+
+    @@include('components/page/_4_scripts.html')
+</body>
+
+</html>
