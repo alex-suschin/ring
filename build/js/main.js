@@ -39,10 +39,10 @@ $(function() {
     //     }
     // });
 
-    $('.style-tab').click(function() {
-        $('.style-tabs').find('.active').removeClass('active');
+    $('.actions-tabs a').click(function() {
+        $('.actions-tabs').find('.active').removeClass('active');
         $(this).addClass('active');
-        $('.styles-elems').find('.styles-elem-item').hide();
+        $('.actions-box').find('.actions-elem').hide();
         $('#' + $(this).data('switch')).show();
     });
 
@@ -118,32 +118,7 @@ $(function() {
         });
     });
 
-    ymaps.ready(function() {
-        var myMap = new ymaps.Map('map1', {
-                center: [51.675628, 39.201276],
-                zoom: 17,
-                scrollZoom: false,
-                controls: ['zoomControl']
-            }, {
-                searchControlProvider: 'yandex#search'
-            }),
 
-            myPlacemark = new ymaps.Placemark([51.675578, 39.203287], {
-                hintContent: 'Официальный дилер Genesis',
-                balloonContent: 'Официальный дилер Genesis'
-            }, {
-                iconLayout: 'default#image',
-                iconImageHref: './img/gps.svg',
-                iconImageSize: [70, 70],
-                cursor: 'pointer',
-                iconImageOffset: [-30, -85],
-                balloonclose: true
-            });
-        myMap.behaviors.disable('scrollZoom');
-        myMap.geoObjects
-            .add(myPlacemark)
-
-    });
 
 
 });
