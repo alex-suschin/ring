@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('components/page/_1_head.html',{ 'title': 'Заголовок', 'description': 'Описание', 'keywords': 'Ключевые слова', 'favicon': 'img/favicon/favicon.png' })
+
+<body>
+    <div class="wrapper" id="top">
+        @@include('components/page/_2_header.html')
+
+        <section class="content">
+            <div class="container">
+                <ul class="breadcrumbs">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Дилерские центры</a></li>
+                    <li><a href="#">Ринг Авто</a></li>
+                </ul>
+
+                <h1>Ринг Авто</h1>
+
+                <div class="dealer-elem">
+                    <div class="auto-item">
+                        <img src="img/genesis.png" alt="">
+                    </div>
+
+                    <div class="dealer-info-box">
+                        <div class="dealer-elem-title">Официальный дилер Genesis</div>
+                        <div class="dealer-info">
+                            <div class="dealer-info-item"><i><img src="img/gps.svg" alt=""></i>г. Воронеж, ул. Изыскателей, 39, корп. 2</div>
+                            <div class="dealer-info-item"><i><img src="img/clock.svg" alt=""></i>Вс.-Чт.: 08:00-20:00, Пт.: сокращенный день, Сб: выходной</div>
+                            <div class="dealer-info-item"><i><img src="img/site.svg" alt=""></i><a href="">www.genesis-ringauto.ru</a></div>
+                            <div class="dealer-info-item"><i><img src="img/email.svg" alt=""></i><a href="mailto:zajavki@hyundai-ringauto.ru">zajavki@hyundai-ringauto.ru</a></div>
+                            <div class="dealer-info-item"><i><img src="img/phone.svg" alt=""></i><a href="tel:+74732205639">+7 (473) 220-56-39</a></div>
+                            <div class="dealer-info-item"><i><img src="img/navigation.svg" alt=""></i><a href="#">показать на карте</a></div>
+                        </div>
+                    </div>
+
+                    <div class="dealer-slider">
+                        <div class="dealer-slider-big">
+                            <div class="dealer-slider-big__item">
+                                <a data-fancybox="dealer-photos" href="img/dealer-img-sl-1.jpg">
+                                    <img src="img/dealer-img-sl-1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="dealer-slider-big__item">
+                                <a data-fancybox="dealer-photos" href="img/dealer-img-sl-2.jpg">
+                                    <img src="img/dealer-img-sl-2.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="dealer-slider-big__item">
+                                <a data-fancybox="dealer-photos" href="img/dealer-img-sl-3.jpg">
+                                    <img src="img/dealer-img-sl-3.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="dealer-slider-big__item">
+                                <a data-fancybox="dealer-photos" href="img/dealer-img-sl-1.jpg">
+                                    <img src="img/dealer-img-sl-1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="dealer-slider-big__item">
+                                <a data-fancybox="dealer-photos" href="img/dealer-img-sl-2.jpg">
+                                    <img src="img/dealer-img-sl-2.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="dealer-slider-big__item">
+                                <a data-fancybox="dealer-photos" href="img/dealer-img-sl-3.jpg">
+                                    <img src="img/dealer-img-sl-3.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="dealer-slider-thumbs">
+                            <div><img src="img/dealer-img-sl-1.jpg" alt=""></div>
+                            <div><img src="img/dealer-img-sl-2.jpg" alt=""></div>
+                            <div><img src="img/dealer-img-sl-3.jpg" alt=""></div>
+                            <div><img src="img/dealer-img-sl-1.jpg" alt=""></div>
+                            <div><img src="img/dealer-img-sl-2.jpg" alt=""></div>
+                            <div><img src="img/dealer-img-sl-3.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="map-dealer" id="map1">
+
+        </section>
+
+        @@include('components/page/_3_footer.html')
+    </div>
+    <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    @@include('components/page/_4_scripts.html')
+</body>
+
+</html>

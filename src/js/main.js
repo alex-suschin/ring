@@ -79,6 +79,26 @@ $(function() {
         }]
     });
 
+    $('.dealer-slider-big').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.dealer-slider-thumbs'
+    });
+
+    $('.dealer-slider-thumbs').slick({
+        slidesToShow: 3,
+        asNavFor: '.dealer-slider-big',
+        dots: false,
+        swipeToSlide: true,
+        arrows: false,
+        vertical: true,
+        verticalSwiping: true,
+        infinite: false,
+        focusOnSelect: true
+    });
+
     $('select').niceSelect();
 
     $(window).on('load', function() {
@@ -97,6 +117,34 @@ $(function() {
             }
         });
     });
+
+    ymaps.ready(function() {
+        var myMap = new ymaps.Map('map1', {
+                center: [51.675628, 39.201276],
+                zoom: 17,
+                scrollZoom: false,
+                controls: ['zoomControl']
+            }, {
+                searchControlProvider: 'yandex#search'
+            }),
+
+            myPlacemark = new ymaps.Placemark([51.675578, 39.203287], {
+                hintContent: 'Официальный дилер Genesis',
+                balloonContent: 'Официальный дилер Genesis'
+            }, {
+                iconLayout: 'default#image',
+                iconImageHref: './img/gps.svg',
+                iconImageSize: [70, 70],
+                cursor: 'pointer',
+                iconImageOffset: [-30, -85],
+                balloonclose: true
+            });
+        myMap.behaviors.disable('scrollZoom');
+        myMap.geoObjects
+            .add(myPlacemark)
+
+    });
+
 
 });
 
