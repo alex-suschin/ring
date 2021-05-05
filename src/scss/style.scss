@@ -3437,6 +3437,64 @@ footer {
     flex-wrap: wrap;
 }
 
+.vacancies {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.vacancies+b {
+    display: block;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 100%;
+    text-align: left;
+    color: #FFFFFF;
+    margin-bottom: 33px;
+}
+
+.note-img {
+    .btn-orange {
+        display: block;
+        max-width: 336px;
+        width: 100%;
+    }
+}
+
+.wrapper-vac .content {
+    padding-bottom: 0;
+}
+
+.wrapper-vac .note-img {
+    margin-bottom: 0;
+}
+
+.vacancies-item {
+    max-width: 299px;
+    width: 100%;
+    margin-right: 91px;
+    &:last-child {
+        margin-right: 0;
+    }
+    img {
+        margin-bottom: 24px;
+    }
+    .title {
+        font-weight: normal;
+        font-size: 35px;
+        line-height: 100%;
+        color: #FFFFFF;
+        margin-bottom: 8px;
+    }
+    .desc {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 140%;
+        color: #FFFFFF;
+    }
+}
+
 
 /* 
     M O B I L E

@@ -3567,6 +3567,58 @@ footer {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
+.vacancies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 40px; }
+
+.vacancies + b {
+  display: block;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 100%;
+  text-align: left;
+  color: #FFFFFF;
+  margin-bottom: 33px; }
+
+.note-img .btn-orange {
+  display: block;
+  max-width: 336px;
+  width: 100%; }
+
+.wrapper-vac .content {
+  padding-bottom: 0; }
+
+.wrapper-vac .note-img {
+  margin-bottom: 0; }
+
+.vacancies-item {
+  max-width: 299px;
+  width: 100%;
+  margin-right: 91px; }
+  .vacancies-item:last-child {
+    margin-right: 0; }
+  .vacancies-item img {
+    margin-bottom: 24px; }
+  .vacancies-item .title {
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 100%;
+    color: #FFFFFF;
+    margin-bottom: 8px; }
+  .vacancies-item .desc {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF; }
+
 /* 
     M O B I L E
 */
