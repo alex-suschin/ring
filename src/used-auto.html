@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('components/page/_1_head.html',{ 'title': 'Заголовок', 'description': 'Описание', 'keywords': 'Ключевые слова', 'favicon': 'img/favicon/favicon.png' })
+
+<body>
+    <div class="wrapper" id="top">
+        @@include('components/page/_2_header.html')
+
+        <section class="content">
+            <div class="container">
+                <ul class="breadcrumbs">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Автомобили с пробегом</a></li>
+                </ul>
+
+                <h1>Автомобили с пробегом</h1>
+
+                <p>Группа компаний «Ринг» – это сильная сплочённая команда. Мы ищем людей для развития, а не только для выполнения текущих задач. Группа компаний Ринг предоставляет широкий спектр услуг по выбору, покупке и обмену автомобилей с пробегом различных
+                    ценовых категорий.</p>
+
+                <p>Среди нас мы хотим видеть вовлеченных, честных, прогрессивных и талантливых сотрудников с активной жизненной позицией, разделяющих наши ценности и стремящихся развиваться вместе с компанией.</p>
+
+                <div class="note-img" style="background-image: url(img/auto-used-bg.jpg);">
+                    <div class="container">
+                        <div class="title-car-used">Преимущества покупки автомобиля с пробегом у нас</div>
+                        <div class="auto-used-items">
+                            <div class="auto-used-item">
+                                <img src="img/car-used-ico1.svg" alt="">
+                                <span>Проверенные автомобили: Автомобили проходят диагностику по 150 параметрам</span>
+                            </div>
+                            <div class="auto-used-item">
+                                <img src="img/car-used-ico2.svg" alt="">
+                                <span>Юридическая гарантия: Автомобили проходят тщательную проверку нашей юридической службой</span>
+                            </div>
+                            <div class="auto-used-item">
+                                <img src="img/car-used-ico3.svg" alt="">
+                                <span>Квалифицированная и грамотная консультация сотрудниками</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-auto-used">
+                    <div class="service-auto-used__left">
+                        <div class="title">Услуги</div>
+                        <ul>
+                            <li>Подберем автомобиль по вашим параметрам</li>
+                            <li>Рассчитаем кредит на месте</li>
+                            <li>Выгодно обменяйте свой автомобиль в trade-in</li>
+                            <li>КАСКО, ОСАГО и другие виды страхования</li>
+                            <li>Оценка и выкуп вашего автомобиля</li>
+                            <li>Комиссионная продажа: поручите продажу вашего автомобиля профессионалам</li>
+                        </ul>
+                    </div>
+                    <div class="service-auto-used__right">
+                        <b>Большой склад <br>
+                            автомобилей <br>
+                            с пробегом</b>
+                        <a href="#" class="btn-orange">ВЫБРАТЬ АВТОМОБИЛЬ</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        @@include('components/page/_3_footer.html')
+    </div>
+
+    @@include('components/page/_4_scripts.html')
+</body>
+
+</html>
