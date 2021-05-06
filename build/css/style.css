@@ -3062,7 +3062,8 @@ footer {
 .dealer-slider {
   font-size: 0; }
 
-.dealer-slider-big__item {
+.dealer-slider-big__item,
+.dealer-slider-thumbs__item {
   width: 100vw; }
 
 .dealer-slider-big {
@@ -3100,24 +3101,24 @@ footer {
   overflow: hidden;
   display: inline-block;
   vertical-align: top; }
-  .dealer-slider-thumbs div {
+  .dealer-slider-thumbs .dealer-slider-thumbs__item {
+    margin-bottom: 47px;
+    border-radius: 8px;
+    overflow: hidden; }
+  .dealer-slider-thumbs .dealer-slider-thumbs__item div {
     cursor: pointer;
     position: relative;
     height: 0;
-    padding-bottom: 63%;
-    max-width: 143px;
     width: 100%;
-    border-radius: 8px;
-    margin-bottom: 47px;
+    padding-bottom: 65%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    overflow: hidden;
     transition: all 0.2s cubic-bezier(0.75, 0.02, 0.5, 1);
     -webkit-transition: all 0.2s cubic-bezier(0.75, 0.02, 0.5, 1);
     -moz-transition: all 0.2s cubic-bezier(0.75, 0.02, 0.5, 1);
     -ms-transition: all 0.2s cubic-bezier(0.75, 0.02, 0.5, 1);
     -o-transition: all 0.2s cubic-bezier(0.75, 0.02, 0.5, 1); }
-    .dealer-slider-thumbs div img {
+    .dealer-slider-thumbs .dealer-slider-thumbs__item div img {
       position: absolute;
       top: 0;
       right: 0;
@@ -3868,6 +3869,9 @@ footer {
   .news-more .news-middle__item {
     margin-bottom: 0; }
 
+.mob-btn-page {
+  display: none; }
+
 /* 
     M O B I L E
 */
@@ -3892,6 +3896,18 @@ footer {
     left: 15px; } }
 
 @media screen and (max-width: 1562px) {
+  .dealer-slider-big {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 12px; }
+  .dealer-slider-thumbs {
+    display: block;
+    height: auto;
+    max-width: 100%; }
+  .dealer-slider-thumbs__item {
+    width: 31%; }
+  .media-item {
+    width: 31.5%; }
   .form-clients .form-clients-item:nth-child(3) {
     margin-right: 30px; }
   .dealers-item .auto-item {
@@ -4170,6 +4186,16 @@ footer {
     margin-bottom: 20px; }
   .auto-cities {
     min-height: 135px; } }
+
+@media screen and (max-width: 1150px) {
+  .media-item {
+    width: 48%; }
+  .media-item:nth-child(2n) {
+    margin-right: 0; }
+  .media-item:nth-child(3n) {
+    margin-right: 30px; }
+  .media-item:last-child {
+    margin-right: 0; } }
 
 @media screen and (max-width: 991px) {
   body {
@@ -4484,6 +4510,14 @@ footer {
     min-height: 150px; } }
 
 @media screen and (max-width: 900px) {
+  .media-item-name {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 120%;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-bottom: 11px;
+    padding-top: 15px; }
   .dealers-item .auto-item {
     width: 132px;
     height: 132px;
@@ -4573,7 +4607,9 @@ footer {
 @media screen and (max-width: 800px) {
   .news-box__left {
     width: 100%;
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+  .media-item {
+    width: 47.5%; } }
 
 @media screen and (max-width: 700px) {
   .exs-item {
@@ -4639,6 +4675,17 @@ footer {
     right: -37px; } }
 
 @media screen and (max-width: 640px) {
+  .media-item .play {
+    width: 22px;
+    background-size: 7px;
+    height: 22px; }
+  .media-item {
+    max-width: 100%;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 25px; }
+  .media-item:nth-child(3n) {
+    margin-right: 0; }
   .form-clients .form-clients-item {
     margin-right: 0;
     max-width: 100%; }
@@ -4822,6 +4869,19 @@ footer {
     background-repeat: no-repeat; } }
 
 @media screen and (max-width: 499px) {
+  .mob-btn-page {
+    display: block; }
+  .page-list li:first-child,
+  .page-list li:nth-last-child(3),
+  .page-list li:nth-last-child(4) {
+    display: none; }
+  .page-list li:last-child {
+    display: block;
+    max-width: 74px;
+    width: 100%; }
+    .page-list li:last-child a {
+      width: 100%;
+      padding: 0; }
   .auto-items {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;

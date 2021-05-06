@@ -3046,7 +3046,8 @@ footer {
     font-size: 0;
 }
 
-.dealer-slider-big__item {
+.dealer-slider-big__item,
+.dealer-slider-thumbs__item {
     width: 100vw;
 }
 
@@ -3080,17 +3081,18 @@ footer {
     overflow: hidden;
     display: inline-block;
     vertical-align: top;
-    div {
+    .dealer-slider-thumbs__item {
+        margin-bottom: 47px;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    .dealer-slider-thumbs__item div {
         cursor: pointer;
         position: relative;
         height: 0;
-        padding-bottom: 63%;
-        max-width: 143px;
         width: 100%;
-        border-radius: 8px;
-        margin-bottom: 47px;
+        padding-bottom: 65%;
         box-sizing: border-box;
-        overflow: hidden;
         @include tr;
         img {
             @include abs100;
@@ -3733,6 +3735,10 @@ footer {
     }
 }
 
+.mob-btn-page {
+    display: none;
+}
+
 
 /* 
     M O B I L E
@@ -3764,6 +3770,22 @@ footer {
 }
 
 @media screen and (max-width: 1562px) {
+    .dealer-slider-big {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+    .dealer-slider-thumbs {
+        display: block;
+        height: auto;
+        max-width: 100%;
+    }
+    .dealer-slider-thumbs__item {
+        width: 31%;
+    }
+    .media-item {
+        width: 31.5%;
+    }
     .form-clients .form-clients-item:nth-child(3) {
         margin-right: 30px;
     }
@@ -4092,6 +4114,21 @@ footer {
     }
 }
 
+@media screen and (max-width: 1150px) {
+    .media-item {
+        width: 48%;
+    }
+    .media-item:nth-child(2n) {
+        margin-right: 0;
+    }
+    .media-item:nth-child(3n) {
+        margin-right: 30px;
+    }
+    .media-item:last-child {
+        margin-right: 0;
+    }
+}
+
 @media screen and (max-width: 991px) {
     body {
         padding-top: 82px;
@@ -4410,6 +4447,15 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
+    .media-item-name {
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 120%;
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-bottom: 11px;
+        padding-top: 15px;
+    }
     .dealers-item .auto-item {
         width: 132px;
         height: 132px;
@@ -4504,6 +4550,9 @@ footer {
         width: 100%;
         margin-bottom: 0;
     }
+    .media-item {
+        width: 47.5%;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -4586,6 +4635,20 @@ footer {
 }
 
 @media screen and (max-width: 640px) {
+    .media-item .play {
+        width: 22px;
+        background-size: 7px;
+        height: 22px;
+    }
+    .media-item {
+        max-width: 100%;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+    .media-item:nth-child(3n) {
+        margin-right: 0;
+    }
     .form-clients .form-clients-item {
         margin-right: 0;
         max-width: 100%;
@@ -4812,6 +4875,23 @@ footer {
 }
 
 @media screen and (max-width: 499px) {
+    .mob-btn-page {
+        display: block;
+    }
+    .page-list li:first-child,
+    .page-list li:nth-last-child(3),
+    .page-list li:nth-last-child(4) {
+        display: none;
+    }
+    .page-list li:last-child {
+        display: block;
+        max-width: 74px;
+        width: 100%;
+        a {
+            width: 100%;
+            padding: 0;
+        }
+    }
     .auto-items {
         justify-content: space-between;
     }

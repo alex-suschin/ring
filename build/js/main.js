@@ -96,7 +96,15 @@ $(function() {
         vertical: true,
         verticalSwiping: true,
         infinite: false,
-        focusOnSelect: true
+        focusOnSelect: true,
+        responsive: [{
+            breakpoint: 1563,
+            settings: {
+                vertical: false,
+                verticalSwiping: false,
+                variableWidth: false
+            }
+        }]
     });
 
     $('select').niceSelect();
