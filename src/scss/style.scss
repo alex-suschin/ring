@@ -16,6 +16,7 @@ body {
     height: 100%;
     background: #fff;
     -webkit-tap-highlight-color: transparent;
+    overflow-x: hidden;
 }
 
 div,
@@ -2828,7 +2829,10 @@ footer {
 }
 
 .note-img {
-    margin: 0 -186.5px;
+    width: 100vw;
+    transform: translateX(-50%);
+    position: relative;
+    left: 50%;
     font-weight: normal;
     font-size: 35px;
     margin-bottom: 40px;
@@ -3760,6 +3764,21 @@ footer {
 }
 
 @media screen and (max-width: 1562px) {
+    .form-clients .form-clients-item:nth-child(3) {
+        margin-right: 30px;
+    }
+    .dealers-item .auto-item {
+        margin-right: 25px;
+    }
+    .dealer-info-item i {
+        margin-right: 7px;
+    }
+    .dealer-info-item {
+        margin-bottom: 15px;
+    }
+    .dealer-name b {
+        font-size: 18px;
+    }
     .container {
         max-width: 1200px;
     }
@@ -3900,6 +3919,23 @@ footer {
     }
     a:focus {
         outline: none;
+    }
+    .form-callback-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .dealer-name {
+        margin-right: 15px;
+    }
+    .dealer-info-item i {
+        margin-top: -3px;
+    }
+    .dealer-info-item,
+    .dealer-info-item a {
+        font-size: 12px;
+    }
+    .dealer-info-item:nth-child(2n) {
+        padding-left: 50px;
     }
     .top-slider__item .title {
         font-size: 32px;
@@ -4059,6 +4095,26 @@ footer {
 @media screen and (max-width: 991px) {
     body {
         padding-top: 82px;
+    }
+    .note-img {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 130%;
+    }
+    .dealers-item .auto-item {
+        width: 100px;
+        height: 100px;
+    }
+    .dealer-name {
+        width: 50%;
+    }
+    .dealer-info-item:nth-child(2n) {
+        padding-left: 20px;
+    }
+    .dealer-name b {
+        font-size: 16px;
     }
     .sub-menu li:first-child {
         margin-top: 0;
@@ -4354,6 +4410,35 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
+    .dealers-item .auto-item {
+        width: 132px;
+        height: 132px;
+        margin: 0 auto;
+    }
+    .dealers-item {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .dealer-name {
+        text-align: center;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+    .dealer-info {
+        justify-content: space-between;
+    }
+    .dealer-info-item:nth-child(2n) {
+        padding-left: 0;
+        text-align: right;
+    }
+    .dealer-info-item {
+        width: 45%;
+    }
+    .dealer-name a {
+        margin: 0 auto;
+    }
     .small-news-img {
         width: 153px;
     }
@@ -4501,6 +4586,57 @@ footer {
 }
 
 @media screen and (max-width: 640px) {
+    .form-clients .form-clients-item {
+        margin-right: 0;
+        max-width: 100%;
+    }
+    .form-clients .form-clients-item:nth-child(3) {
+        margin-right: 0;
+    }
+    .content p {
+        font-size: 14px;
+        margin-bottom: 26px;
+    }
+    .form-callback .title {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 150%;
+        margin-bottom: 25px;
+    }
+    .form-callback-item {
+        margin-right: 0;
+        max-width: 100%;
+        margin-bottom: 18px;
+    }
+    .form-callback-item textarea {
+        min-height: 171px;
+    }
+    .form-callback button.btn-orange {
+        max-width: 100%;
+    }
+    .content {
+        padding: 25px 0 100px 0;
+    }
+    .breadcrumbs {
+        margin-bottom: 15px;
+    }
+    .dealer-name a {
+        max-width: 180px;
+    }
+    .content h1 {
+        font-weight: normal;
+        font-size: 27px;
+        line-height: 100%;
+        margin-bottom: 25px;
+    }
+    .filter {
+        flex-direction: column;
+    }
+    .filter-item {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 18px;
+    }
     .mark-name {
         font-size: 18px;
     }
@@ -4682,6 +4818,15 @@ footer {
     .auto-item img {
         width: 60%;
     }
+    .dealers-item .auto-item {
+        width: auto;
+        height: auto;
+    }
+    .dealers-item .auto-item img {
+        position: static;
+        width: 82%;
+        margin-bottom: 25px;
+    }
     .auto-item {
         width: 132px;
         height: 132px;
@@ -4698,5 +4843,11 @@ footer {
     .auto-item:last-child {
         margin-bottom: 0;
         margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .dealer-info {
+        display: none;
     }
 }
