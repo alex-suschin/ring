@@ -192,6 +192,23 @@ $(window).on('load resize', function() {
         $('.footer-left .menu').prependTo($('.mobile-menu-footer'));
     }
 
+    if (width < '821') {
+
+
+        $('.news-more:not(.slick-initialized)').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            variableWidth: true,
+            dots: true,
+            swipeToSlide: true,
+            arrows: false
+        });
+    } else {
+        $(".news-more.slick-initialized").slick("unslick");
+    }
+
+
     // if (width > '640') {
 
 
