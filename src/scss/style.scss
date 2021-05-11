@@ -1174,6 +1174,7 @@ body.compensate-for-scrollbar {
     background: #fff;
     z-index: 999;
     padding: 0 0 0 0;
+    border-bottom: 1px solid #E7ECF2;
     .container {
         display: flex;
         justify-content: space-between;
@@ -3137,10 +3138,11 @@ footer {
         background: linear-gradient(180deg, rgba(255, 255, 255, 0) 20.54%, #1B3954 143.62%);
         z-index: 1;
     }
-    img {
+    a {
         @include abs100;
         object-position: center;
         object-fit: cover;
+        z-index: 10;
     }
 }
 
@@ -3151,8 +3153,10 @@ footer {
     align-items: flex-start;
     justify-content: flex-end;
     @include abs100;
-    z-index: 3;
-    .title {
+    a.title {
+        position: static;
+        display: block;
+        height: auto;
         width: 100%;
         font-weight: normal;
         font-size: 36px;
@@ -3169,6 +3173,8 @@ footer {
 }
 
 .news-veiws {
+    position: relative;
+    z-index: 10;
     font-weight: normal;
     font-size: 14px;
     line-height: 100%;
@@ -3179,6 +3185,8 @@ footer {
 }
 
 .news-date {
+    position: relative;
+    z-index: 10;
     font-weight: normal;
     font-size: 14px;
     line-height: 100%;
@@ -3202,10 +3210,6 @@ footer {
 }
 
 .news-middle__left {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
     width: 49%;
 }
 
@@ -3741,6 +3745,21 @@ footer {
     display: none;
 }
 
+.slick-initialized .slick-slide.news-middle-sl__item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.news-middle-sl .slick-dots {
+    top: initial;
+    bottom: 0;
+    left: 0;
+    justify-content: flex-start;
+}
+
 
 /* 
     M O B I L E
@@ -3772,6 +3791,14 @@ footer {
 }
 
 @media screen and (max-width: 1562px) {
+    .dealer-slider-thumbs .dealer-slider-thumbs__item {
+        max-width: 150px;
+    }
+    .dealer-slider {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
     .news-detail-box__left {
         width: 68%;
     }

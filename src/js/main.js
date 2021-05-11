@@ -83,28 +83,45 @@ $(function() {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        fade: true,
-        asNavFor: '.dealer-slider-thumbs'
+        vertical: true,
+        draggable: false,
+        infinite: true,
+        asNavFor: '.dealer-slider-thumbs',
+        responsive: [{
+            breakpoint: 1563,
+            settings: {
+                vertical: false,
+                fade: true,
+            }
+        }]
     });
 
     $('.dealer-slider-thumbs').slick({
         slidesToShow: 3,
+        slidesPerRow: 3,
         asNavFor: '.dealer-slider-big',
         dots: false,
         swipeToSlide: true,
         arrows: false,
         vertical: true,
         verticalSwiping: true,
-        infinite: false,
+        infinite: true,
         focusOnSelect: true,
         responsive: [{
             breakpoint: 1563,
             settings: {
                 vertical: false,
-                verticalSwiping: false,
-                variableWidth: false
             }
         }]
+    });
+
+    $('.news-middle-sl').slick({
+        slidesToShow: 1,
+        slidesPerRow: 2,
+        dots: true,
+        swipeToSlide: true,
+        arrows: false,
+        infinite: false
     });
 
     $('select').niceSelect();
@@ -126,7 +143,10 @@ $(function() {
         });
     });
 
-
+    // $().fancybox({
+    //     selector: '.dealer-slider-big .slick-slide:not(.slick-cloned)',
+    //     backFocus: false
+    // });
 
 
 });

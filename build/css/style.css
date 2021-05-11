@@ -16,17 +16,17 @@
 
 @font-face {
   font-family: "Gilroy";
-  src: url("../fonts/Gilroy-Medium.eot");
-  src: url("../fonts/Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff");
-  font-weight: 500;
+  src: url("../fonts/Gilroy-Regular.eot");
+  src: url("../fonts/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "Gilroy";
-  src: url("../fonts/Gilroy-Regular.eot");
-  src: url("../fonts/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
-  font-weight: 400;
+  src: url("../fonts/Gilroy-Medium.eot");
+  src: url("../fonts/Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
   font-display: swap; }
 
@@ -1088,7 +1088,8 @@ body.compensate-for-scrollbar {
   width: 100%;
   background: #fff;
   z-index: 999;
-  padding: 0 0 0 0; }
+  padding: 0 0 0 0;
+  border-bottom: 1px solid #E7ECF2; }
   .header .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3169,7 +3170,7 @@ footer {
     background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 20.54%, #1B3954 143.62%);
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 20.54%, #1B3954 143.62%);
     z-index: 1; }
-  .main-news img {
+  .main-news a {
     position: absolute;
     top: 0;
     right: 0;
@@ -3180,7 +3181,8 @@ footer {
     -o-object-position: center;
        object-position: center;
     -o-object-fit: cover;
-       object-fit: cover; }
+       object-fit: cover;
+    z-index: 10; }
 
 .main-news-content {
   padding: 20px 50px 55px 64px;
@@ -3203,9 +3205,11 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 100%;
-  z-index: 3; }
-  .main-news-content .title {
+  height: 100%; }
+  .main-news-content a.title {
+    position: static;
+    display: block;
+    height: auto;
     width: 100%;
     font-weight: normal;
     font-size: 36px;
@@ -3225,6 +3229,8 @@ footer {
           align-items: center; }
 
 .news-veiws {
+  position: relative;
+  z-index: 10;
   font-weight: normal;
   font-size: 14px;
   line-height: 100%;
@@ -3234,6 +3240,8 @@ footer {
   margin-right: 32px; }
 
 .news-date {
+  position: relative;
+  z-index: 10;
   font-weight: normal;
   font-size: 14px;
   line-height: 100%;
@@ -3260,17 +3268,6 @@ footer {
   margin-bottom: 30px; }
 
 .news-middle__left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   width: 49%; }
 
 .news-middle__right {
@@ -3874,6 +3871,28 @@ footer {
 .mob-btn-page {
   display: none; }
 
+.slick-initialized .slick-slide.news-middle-sl__item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.news-middle-sl .slick-dots {
+  top: initial;
+  bottom: 0;
+  left: 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+
 /* 
     M O B I L E
 */
@@ -3898,6 +3917,19 @@ footer {
     left: 15px; } }
 
 @media screen and (max-width: 1562px) {
+  .dealer-slider-thumbs .dealer-slider-thumbs__item {
+    max-width: 150px; }
+  .dealer-slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
   .news-detail-box__left {
     width: 68%; }
   .news-more .news-middle__item {
