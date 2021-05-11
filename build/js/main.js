@@ -116,11 +116,50 @@ $(function() {
     });
 
     $('.news-middle-sl').slick({
-        slidesToShow: 1,
-        slidesPerRow: 2,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        rows: 2,
         dots: true,
         swipeToSlide: true,
         arrows: false,
+        infinite: false,
+        responsive: [{
+            breakpoint: '1563',
+            settings: {
+                rows: 1,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                slidesPerRow: 1,
+                variableWidth: true,
+                infinite: false
+            }
+        }]
+    });
+
+    $('.more-actions-sl').slick({
+        slidesToShow: 3,
+        dots: true,
+        swipeToSlide: true,
+        arrows: false,
+        infinite: false,
+        responsive: [{
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+            },
+            breakpoint: 641,
+            settings: {
+                slidesToShow: 1,
+            }
+        }]
+    });
+
+    $('.slider-news-mobile').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false,
+        variableWidth: true,
         infinite: false
     });
 
