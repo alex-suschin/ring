@@ -73,7 +73,7 @@ $(function() {
             breakpoint: 701,
             settings: {
                 arrows: false,
-                slidesToShow: 2,
+                slidesToShow: 1,
                 variableWidth: true
             }
         }]
@@ -85,32 +85,47 @@ $(function() {
         arrows: false,
         vertical: true,
         draggable: false,
-        infinite: true,
+        infinite: false,
         asNavFor: '.dealer-slider-thumbs',
         responsive: [{
             breakpoint: 1563,
             settings: {
                 vertical: false,
+                infinite: true,
+                verticalSwiping: false,
                 fade: true,
+            },
+            breakpoint: 641,
+            settings: {
+                vertical: false,
+                infinite: true,
+                verticalSwiping: false,
+                slidesToShow: 1,
+                fade: false,
+                variableWidth: true
             }
         }]
     });
 
     $('.dealer-slider-thumbs').slick({
         slidesToShow: 3,
-        slidesPerRow: 3,
+        slidesPerRow: 1,
         asNavFor: '.dealer-slider-big',
         dots: false,
         swipeToSlide: true,
         arrows: false,
         vertical: true,
         verticalSwiping: true,
-        infinite: true,
+        infinite: false,
         focusOnSelect: true,
         responsive: [{
             breakpoint: 1563,
             settings: {
+                slidesToShow: 1,
                 vertical: false,
+                infinite: true,
+                verticalSwiping: false,
+                variableWidth: true
             }
         }]
     });
@@ -124,7 +139,7 @@ $(function() {
         arrows: false,
         infinite: false,
         responsive: [{
-            breakpoint: '1563',
+            breakpoint: 1563,
             settings: {
                 rows: 1,
                 slidesToShow: 1,
@@ -154,14 +169,7 @@ $(function() {
         }]
     });
 
-    $('.slider-news-mobile').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: true,
-        arrows: false,
-        variableWidth: true,
-        infinite: false
-    });
+
 
     $('select').niceSelect();
 
@@ -267,6 +275,33 @@ $(window).on('load resize', function() {
         $(".news-more.slick-initialized").slick("unslick");
     }
 
+    if (width < '641') {
+        $('.slider-news-mobile:not(.slick-initialized)').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+            arrows: false,
+            variableWidth: true,
+            infinite: false
+        });
+    } else {
+        $(".slider-news-mobile.slick-initialized").slick("unslick");
+    }
+
+    if (width < '641') {
+        $('div[data-img-mobile').each(function() {
+            var bgDesc = $(this).attr('style');
+            var bgMob = $(this).attr('data-img-mobile');
+            $(this).attr('style', bgMob);
+        })
+    }
+
+    if (width > '640') {
+        $('div[data-img-desc').each(function() {
+            var bgDataDesc = $(this).attr('data-img-desc');
+            $(this).attr('style', bgDataDesc);
+        })
+    }
 
     // if (width > '640') {
 
